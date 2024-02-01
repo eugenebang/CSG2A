@@ -1,6 +1,6 @@
 # CSG2A
 
-The official code implementation for $CSG^2A$ network from our paper, "Transfer Learning of Condition-Specific Perturbation in Gene Interactions Improves Drug Response Prediction".
+The official code implementation for *Condition-Specific Gene-Gene Attention* ($CSG^2A$) network from our paper, "Transfer Learning of Condition-Specific Perturbation in Gene Interactions Improves Drug Response Prediction".
 
 Here, we provide codes for pretraining our network in transcriptome data (including LINCS L1000 dataset) and finetuning our network in cell viability data (including GDSC dataset).
 
@@ -21,7 +21,7 @@ git clone https://github.com/eugenebang/CSG2A.git
 cd CSG2A/
 ```
 
-To install the appropriate environment for DREAMwalk, you should install [conda](https://docs.conda.io/en/latest/) package manager.
+To install the appropriate environment for $CSG^2A" network, you should install [conda](https://docs.conda.io/en/latest/) package manager.
 
 After installing `conda` and placing the `conda` executable in `PATH`, the following command will create `conda` environment named `csg2a`. It will take up to 10 minutes to setup the environment, but may vary upon the Internet connection and package cache states.
 ```
