@@ -41,8 +41,8 @@ We also provide the LINCS L1000-pretrained weights, utilizable for fine-tuning t
 
 We note that we provide two versions; trained on [LINCS L1000 Landmark genes (total 978)](data/LINCS_L1000_landmark_genes.txt) and trained on [LINCS L1000 bing (infered) genes (total 10,167)](data/LINCS_L1000_bing_genes.txt). The experimental results in the manucript is all reported using the Landmark genes.
 
-- Landmark pretrained model (link)
-- Bing (infered) pretrained model (link)
+- Landmark pretrained model (Approx. 170MB; [link](https://drive.google.com/file/d/17-fFIxXB1avNZ9gWsccZ7Ia5Myqfzi9M/view))
+- Bing (infered) pretrained model (Approx. 600MB; [link](https://drive.google.com/file/d/1YSafSPi-BreuVveAAtxc-zkMpm7qDjBb/view))
 
 Also the pretrained MAT weights for training from scratch can be obtained from the [original author's repository](https://github.com/ardigen/MAT).
 
