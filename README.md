@@ -63,3 +63,8 @@ $CSG^2A$ network training and evaluation were tested for the following python pa
   - `pandas`=2.1.1
   - `scipy`=1.11.3
   - `tqdm`=4.66.1
+
+# License
+The source code of CSG^2A follows [GPL 3.0v license](LICENSE), and allows users to use, modify, and distribute the software freely, even for commercial purposes.
+
+However, any data or content produced from using CSG^2A follows [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0), which does not permit commercial use without proper authorization.
