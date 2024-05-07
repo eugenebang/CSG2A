@@ -1,6 +1,6 @@
 # CSG2A
 
-The official code implementation for *Condition-Specific Gene-Gene Attention* ($CSG^2A$) network from our paper, "Transfer Learning of Condition-Specific Perturbation in Gene Interactions Improves Drug Response Prediction".
+The official code implementation for *Condition-Specific Gene-Gene Attention* ($CSG^2A$) network from our paper, "Transfer Learning of Condition-Specific Perturbation in Gene Interactions Improves Drug Response Prediction" (Accepted for *ISMB 2024*).
 
 Here, we provide codes for pretraining our network in transcriptome data (including LINCS L1000 dataset) and finetuning our network in cell viability data (including GDSC dataset).
 
@@ -21,20 +21,24 @@ git clone https://github.com/eugenebang/CSG2A.git
 cd CSG2A/
 ```
 
-To install the appropriate environment for $CSG^2A" network, you should install [conda](https://docs.conda.io/en/latest/) package manager.
+To install the appropriate environment for $CSG^2A$ network, you should install [conda](https://docs.conda.io/en/latest/) package manager.
 
-After installing `conda` and placing the `conda` executable in `PATH`, the following command will create `conda` environment named `csg2a`. It will take up to 10 minutes to setup the environment, but may vary upon the Internet connection and package cache states.
+After installing `conda` and placing the `conda` executable in `PATH`, the following command will create `conda` environment named `csg2a`. It will take up to 10 minutes to setup the environment, but may vary upon the Internet connection and package cache status.
 ```
 conda env create -f environment.yaml && \
 conda activate csg2a
 ```
 
+Or if you have a virtual environment with adequate `pytorch` version for your hardware settings including GPU and CUDA, you can install the neccessary packages listed [below](https://github.com/eugenebang/CSG2A/edit/main/README.md#software-requirements) with `pip` before running the model.
+
 To check whether $CSG^2A$ network works properly, please refer to the Example codes section below.
 
 ## Example codes
-Sample code to generate the embedding space and predict drug-disease associations are provided in [`finetune_GDSC.ipynb`](finetune_GDSC.ipynb).
+Sample code to fine-tune the IC50 prediction model and evaluate the performance are provided in [`finetune_GDSC.ipynb`](finetune_GDSC.ipynb).
 
 - The file formats for each input file can be found in [here](data).
+
+Code for pretraining the $CSG^2A$ network on the LINCS L1000 or any other transcriptome level dataset with dose and time information are provided in [`pretrain_LINCS.ipynb`](pretrain_LINCS.ipynb).
 
 ### Pretrained weights
 We also provide the LINCS L1000-pretrained weights, utilizable for fine-tuning to cell viabilty drug reponse prediction tasks.
@@ -65,6 +69,6 @@ $CSG^2A$ network training and evaluation were tested for the following python pa
   - `tqdm`=4.66.1
 
 # License
-The source code of CSG^2A follows [GPL 3.0v license](LICENSE), and allows users to use, modify, and distribute the software freely, even for commercial purposes.
+The source code of $CSG^2A$ follows [GPL 3.0v license](LICENSE), and allows users to use, modify, and distribute the software freely, even for commercial purposes.
 
-However, any data or content produced from using CSG^2A follows [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0), which does not permit commercial use without proper authorization.
+However, any data or content produced from using $CSG^2A$ follows [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0), which does not permit commercial use without proper authorization.
